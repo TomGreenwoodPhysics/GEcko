@@ -1,0 +1,7 @@
+requests>=2.31
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.7
+statsmodels>=0.14   # ADF, Engle-Granger (coint), Johansen - required by gecko.stats
+pytest>=7.4
+scikit-learn>=1.3  # logistic regression / GBT signal layer

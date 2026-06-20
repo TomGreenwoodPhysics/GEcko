@@ -1,0 +1,30 @@
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# environments
+.venv/
+env/
+venv/
+*.egg-info/
+
+# notebooks
+.ipynb_checkpoints/
+
+# local/system files
+.DS_Store
+Thumbs.db
+
+# secrets / local config
+.env
+.env.*
+
+# Note: data/ (raw, screen, clean) and figures/ are intentionally
+# committed, NOT ignored. The data is small (a few MB total across the
+# whole project) and the OSRS Wiki realtime API only ever exposes a
+# rolling ~3-month window -- committing the exact data used is the only
+# way the headline results (measured spreads, buy-limit feasibility,
+# backtest numbers) stay reproducible from a fresh clone.

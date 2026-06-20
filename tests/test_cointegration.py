@@ -92,10 +92,10 @@ class TestCointegrationTests:
         rng = np.random.default_rng(seed)
         idx = pd.date_range("2015-01-01", periods=n)
         log_raw = pd.Series(rng.normal(scale=0.02, size=n).cumsum() + 4.0, index=idx)
-        noise = pd.Series(np.zeros(n), index=idx)
-        nv = noise.values
+        nv = np.zeros(n)
         for t in range(1, n):  # stationary AR(1) noise
             nv[t] = 0.9 * nv[t-1] + rng.normal(scale=0.01)
+        noise = pd.Series(nv, index=idx)
         log_proc = beta * log_raw + 0.3 + noise
         return log_raw, log_proc
 

@@ -1,4 +1,4 @@
-# GEcko — Methodology
+# GEcko - Methodology
 
 Full detail behind every claim in the main [README](../README.md): the
 8-pair screen, the rolling stability checks, the realistic-cost stress test,

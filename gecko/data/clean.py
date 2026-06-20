@@ -1,5 +1,5 @@
 """
-gecko.data.clean — turn raw per-leg price dumps into one clean, aligned panel.
+gecko.data.clean - turn raw per-leg price dumps into one clean, aligned panel.
 
 Design rules (these matter for the project's lookahead-bias story later,
 so they're enforced here, not bolted on in Week 9):
@@ -21,7 +21,7 @@ so they're enforced here, not bolted on in Week 9):
      shouldn't force a perfectly good price observation to be dropped.
 
 Everything here is a pure function: dataframe in, (dataframe, report) out.
-No file I/O, no network — easy to unit test (see tests/test_clean.py).
+No file I/O, no network - easy to unit test (see tests/test_clean.py).
 """
 
 from __future__ import annotations
@@ -44,7 +44,7 @@ def fill_grid(df: pd.DataFrame, freq: str, max_gap: int,
     like volume from gating completeness of the price columns.
 
     Returns (filled_df, report). filled_df still has NaNs in required_cols
-    wherever a gap exceeded max_gap — those rows are NOT silently dropped
+    wherever a gap exceeded max_gap - those rows are NOT silently dropped
     here; that decision belongs to the caller (see align_pair), so a
     single-leg report is honest about what this leg alone could supply.
     """

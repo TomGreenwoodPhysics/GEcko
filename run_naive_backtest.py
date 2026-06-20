@@ -130,7 +130,7 @@ def plot_comparison(label: str, res_tax_only: dict, res_realistic: dict):
     ax.plot(res_realistic["equity_curve"].index, res_realistic["equity_curve"].values,
             lw=1.0, color="tab:green", label="tax + measured realistic spread")
     ax.set_yscale("log")
-    ax.set_title(f"{label} — how much of the tax-only return survives a "
+    ax.set_title(f"{label} - how much of the tax-only return survives a "
                  "realistic spread cost? (log scale)", fontsize=10)
     ax.legend(loc="upper left", fontsize=8)
     fig.tight_layout()

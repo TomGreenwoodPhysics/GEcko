@@ -1,5 +1,5 @@
 """
-GEcko — Phase 1 data acquisition.
+GEcko - Phase 1 data acquisition.
 
 Pulls OSRS Grand Exchange price data from two complementary sources:
 
@@ -108,7 +108,7 @@ def get_timeseries(session: requests.Session, item_id: int,
 
     Columns returned by the API: avgHighPrice (instabuy), avgLowPrice
     (instasell), highPriceVolume, lowPriceVolume, timestamp (unix seconds).
-    Note the high/low are the realistic instabuy/instasell sides — your
+    Note the high/low are the realistic instabuy/instasell sides - your
     effective spread to cross is roughly (avgHigh - avgLow).
     """
     if timestep not in {"5m", "1h", "6h"}:

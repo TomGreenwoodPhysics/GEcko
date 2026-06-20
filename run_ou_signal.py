@@ -71,14 +71,14 @@ def plot_zscore(label: str, roll: pd.DataFrame):
     ax1.plot(roll.index, roll["spread"], lw=0.7, color="tab:blue")
     ax1.plot(roll.index, roll["mu"], lw=0.8, color="k", ls="--",
              label="trailing-fit mu (steps as it refits)")
-    ax1.set_title(f"{label} — spread vs walk-forward fitted mean", fontsize=10)
+    ax1.set_title(f"{label} - spread vs walk-forward fitted mean", fontsize=10)
     ax1.legend(fontsize=8, loc="upper right")
 
     ax2.plot(roll.index, roll["z"], lw=0.7, color="tab:purple")
     ax2.axhline(2, color="r", ls="--", lw=0.8)
     ax2.axhline(-2, color="r", ls="--", lw=0.8)
     ax2.axhline(0, color="k", lw=0.5)
-    ax2.set_title(f"{label} — z-score (red lines = naive +/-2 entry threshold)",
+    ax2.set_title(f"{label} - z-score (red lines = naive +/-2 entry threshold)",
                   fontsize=10)
 
     fig.tight_layout()

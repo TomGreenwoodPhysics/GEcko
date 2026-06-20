@@ -1,5 +1,5 @@
 """
-Tests for gecko.data.clean — small, hand-built cases where the right answer
+Tests for gecko.data.clean - small, hand-built cases where the right answer
 is known by construction, so a wrong gap policy shows up as a failing
 assertion, not a confusing number three modules downstream.
 

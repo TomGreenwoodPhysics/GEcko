@@ -108,7 +108,7 @@ def plot_overview(ore_d, bar_d, ore_r, bar_r, aligned):
     ax2 = ax.twinx()
     ax2.plot(bar_d.index, bar_d["price"], color="tab:orange", lw=0.8, label="bar")
     ax2.set_ylabel("bar price (gp)", color="tab:orange")
-    ax.set_title("Daily guide price, full history — do they co-move?")
+    ax.set_title("Daily guide price, full history - do they co-move?")
 
     # (2) the ratio (the whole pairs-trading thesis in one line)
     ax = axes[1]
@@ -117,7 +117,7 @@ def plot_overview(ore_d, bar_d, ore_r, bar_r, aligned):
     ax.axhline(ratio.mean(), color="k", ls="--", lw=1,
                label=f"mean {ratio.mean():.2f}")
     ax.set_ylabel("bar / ore")
-    ax.set_title("Price ratio — a flat-ish, mean-reverting line is what you want")
+    ax.set_title("Price ratio - a flat-ish, mean-reverting line is what you want")
     ax.legend(loc="upper right")
 
     # (3) realtime window zoom, realistic mid prices
@@ -145,7 +145,7 @@ def plot_provenance(ore_d, ore_r):
             label="daily guide price")
     ax.plot(ore_r.index, ore_r["mid"], color="tab:blue", lw=0.9, alpha=0.8,
             label="realtime mid (realistic)")
-    ax.set_title("Iron ore: guide price vs realistic price — how much do they "
+    ax.set_title("Iron ore: guide price vs realistic price - how much do they "
                  "disagree?")
     ax.set_ylabel("price (gp)")
     ax.legend()

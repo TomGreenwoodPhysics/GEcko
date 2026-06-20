@@ -101,7 +101,7 @@ def plot_spreads(spreads: dict[str, pd.Series]):
     for ax, (label, sp) in zip(axes.flat, spreads.items()):
         ax.plot(sp.index, sp.values, lw=0.7)
         ax.axhline(sp.mean(), color="k", ls="--", lw=0.8)
-        ax.set_title(f"{label} — log-spread (mean dashed). "
+        ax.set_title(f"{label} - log-spread (mean dashed). "
                      "Flat band around mean = tradeable; drift/break = caution",
                      fontsize=10)
     fig.tight_layout()

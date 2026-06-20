@@ -71,7 +71,7 @@ def plot_rolling(results: dict[str, pd.DataFrame]):
         ax.axhline(0.05, color="r", ls="--", lw=0.8, label="p=0.05")
         ax.set_ylabel("EG p-value", color="tab:blue")
         ax.set_ylim(-0.02, 1.02)
-        ax.set_title(f"{label} — rolling {WINDOW_DAYS//365}y Engle-Granger "
+        ax.set_title(f"{label} - rolling {WINDOW_DAYS//365}y Engle-Granger "
                      "p-value (below red line = cointegrated in that window)",
                      fontsize=10)
         ax.legend(loc="upper right", fontsize=8)

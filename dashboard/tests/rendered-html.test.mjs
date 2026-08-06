@@ -34,6 +34,7 @@ test("keeps research evidence, interactions, and social metadata assets in sourc
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../package.json", import.meta.url), "utf8"),
     access(new URL("../public/og-v2.png", import.meta.url)),
+    access(new URL("../public/favicon-v2.png", import.meta.url)),
     access(new URL("../public/research/rolling-cointegration.png", import.meta.url)),
   ]);
 

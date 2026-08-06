@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     images: ["https://gecko-research-dashboard.greenwoodtom.chatgpt.site/og-v2.png"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/favicon-v2.png",
+    shortcut: "/favicon-v2.png",
   },
 };
 

@@ -12,7 +12,7 @@ lookahead checks, and a small machine learning comparison.
 
 **[Read the full methodology](docs/Methodology.md)**
 
-[![GEcko dashboard preview](docs/dashboard-screenshot.png)](https://gecko-research-dashboard.greenwoodtom.chatgpt.site)
+[![GEcko dashboard preview](dashboard/public/og-v2.png)](https://gecko-research-dashboard.greenwoodtom.chatgpt.site)
 
 ## Main result
 

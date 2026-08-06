@@ -11,10 +11,10 @@ permissions:
   contents: read
 
 jobs:
-  python-tests:
-    name: Python tests
+  tests:
+    name: Python and dashboard tests
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: Check out the repository
@@ -32,19 +32,6 @@ jobs:
       - name: Run Python tests
         run: python -m pytest -q
 
-  dashboard-tests:
-    name: Dashboard tests
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    defaults:
-      run:
-        working-directory: dashboard
-
-    steps:
-      - name: Check out the repository
-        uses: actions/checkout@v4
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -54,9 +41,12 @@ jobs:
 
       - name: Install dashboard dependencies
         run: npm ci
+        working-directory: dashboard
 
       - name: Lint the dashboard
         run: npm run lint
+        working-directory: dashboard
 
       - name: Test the dashboard
         run: npm test
+        working-directory: dashboard

@@ -13,6 +13,19 @@ and being honest about every place that methodology breaks down.
 **Full methodology, all rejected pairs, and every number behind these
 headlines: [docs/METHODOLOGY.md](docs/METHODOLOGY.md).**
 
+## Interactive research dashboard
+
+[![GEcko dashboard preview](dashboard/public/og-v2.png)](https://gecko-research-dashboard.greenwoodtom.chatgpt.site)
+
+The project results are also available as an interactive dashboard, including
+the candidate-pair screen, rolling cointegration diagnostics, cost-model
+comparison, capacity scenarios, ML benchmarks, and lookahead audit.
+
+**[Open the live GEcko dashboard →](https://gecko-research-dashboard.greenwoodtom.chatgpt.site)**
+
+The dashboard source is included in [`dashboard/`](dashboard/). To run it
+locally, use `npm install` followed by `npm run dev` from that directory.
+
 ## Headline result
 
 After screening 8 candidate pairs, the **Cowhide → Leather** relationship
